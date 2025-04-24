@@ -11,6 +11,7 @@ def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
 
     Returns:
         Union[Any, None]: The first element of the sequence or None.
+                          (Will be represented as Union[Any, NoneType] in Python 3.7 __annotations__)
     """
     if lst:
         return lst[0]
